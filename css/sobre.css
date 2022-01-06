@@ -6,7 +6,7 @@ p{
 	/**Alinha o texto a esquerda, direita ou justifica com justify**/
 	text-align: justify;
 
-	padding: 0 45px; /* aplica-se 10px acima e 15px a direita, se passar assim: 10 px 15px 5px 20px, irá se aplicar
+	padding: 0px 45px; /* aplica-se 10px acima e 15px a direita, se passar assim: 10 px 15px 5px 20px, irá se aplicar
 	10px cima, 15px direita, 5 px baixo, 20px esquerda, lembrar do sentido horário. O padding é a distância do elemento
 	até a sua borda*/
 
@@ -44,6 +44,7 @@ h1{
 	background-image: url(sobre-background.jpg);
 	padding: 10px;
 }
+
 
 /*Borda que separa os conteudos*/
 h2{
