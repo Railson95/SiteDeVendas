@@ -1,3 +1,23 @@
+
+/*Mudar apenas a primeira linha do primeiro parágrafo que não é precedido por outros parágrafos, usando pseudo classes*/
+:not(p) + p:first-line {
+	font-variant: small-caps;
+}
+/*Coloca a primeira letra de cada parágrafo em negrito, usando pseudo classes*/
+p:first-letter {
+	font-weight: bold;
+}
+
+/*Retira a indentação do primeiro parágrafo após a tag h1, que neste caso é o título, usando pseudo classes*/
+h1 + p {
+	text-indent: 0;
+}
+
+/*Coloca a primeira frase de todos parágrafos com letras diferentes, usando pseudo classes
+p:first-line {
+	font-variant: small-caps;
+}
+*/	
 p{
 	/**Colore as letras de preto e o fundo de branco sendo esse o padrão do Sistema Operacional**/
 	color:black;
@@ -103,4 +123,8 @@ figcaption{
 	deixando o design mais elegante*/
 	margin: 55px 0px 5px 10px;
 }
+
+
+
+
 

@@ -1,0 +1,75 @@
+
+.container{
+	margin: 0 auto;
+	width: 1000px;
+}
+
+.busca,
+.menu-departamentos{
+	background-color: rgb(129, 245, 129);
+	font-weight: bold; /*Coloca a palavra em negrito*/
+	text-transform: uppercase;
+
+	margin-right: 10px;
+	width: 230px;
+}
+
+.busca h2,
+.busca form,
+.menu-departamentos h2{
+	margin: 10px;
+}
+
+
+.menu-departamentos li{
+	background-color:white;
+	margin-bottom: 1px;
+	padding: 5px 10px; /*5 px acima e abaixo, 50 px a direita e esquerda*/
+}
+
+
+.menu-departamentos a{
+	color: #333333;
+	text-decoration: none;/*Tira os sublinhados das palavras*/
+}
+
+
+.busca input {
+	vertical-align: middle;
+}
+
+.busca input[type=search]{
+	width: 170px;
+}
+
+
+.busca,
+.menu-departamentos{
+	float: left;/*Coloca busca e menu-departamentos flutuando a esquerda da imagem*/
+}
+
+.menu-departamentos{
+	clear: left;
+}
+
+/*
+.banner-destaque img{
+	width: 1000px;
+	height: 500px;
+}
+*/
+
+.destaque{
+	margin-top: 10px;
+}
+
+.menu-departamentos{
+	margin-top: 10px;
+	padding-bottom: 5px;
+}
+
+
+
+
+
+

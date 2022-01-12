@@ -14,7 +14,8 @@
 }
 
 .menu-opcoes a{
-	color: #003366;
+	color: black;
+	text-decoration: none;
 }
 
 .menu-opcoes ul li{
@@ -33,6 +34,16 @@ header{
 	right: 0;
 }
 
+/*Ao passar o mouse por cima do menu-opções, muda-se a cor do link para azul, usando pseudo classes*/
+.menu-opcoes a:hover {
+	color: #007dc6;
+}
+
+/*Ao clicar o link muda de cor, usando pseudo classes*/
+.menu-opcoes a:active {
+	color: red;
+}
+
 /*Posiciona a sacola a direita e no topo do header*/
 .sacola{
 	position: absolute;
@@ -45,6 +56,31 @@ header{
 	width: 1000px;
 }
 
+/*Esconde as sublistas criadas em menu-departamentos, usando pseudo-classes */
+.menu-departamentos li ul {
+	display: none;
+}
+/*Quando o usuário passar o mouse por cima, as sublistas criadas serão mostradas, usando pseudo-classes */
+.menu-departamentos li:hover ul {
+	display: block;
+}
+
+/*Coloca o background de cada sublista em cinza, usando pseudo-classes*/
+.menu-departamentos ul ul li {
+	background-color: #dcdcdc;
+}
+
+/*Coloca o hifen antes de cada frase das sublistas, usando pseudo-classes-elementos*/
+.menu-departamentos li li a:before {
+	content: '- ';
+}
+
+/*Coloca uma estrela antes de cada frase das sublistas e ajusta a largura das bordas, usando pseudo-classes-elementos*/
+.menu-departamentos li li a:before {
+	content: '\272A';
+	padding-right: 3px;
+}
+	
 .busca,
 .menu-departamentos{
 	background-color: #DCDCDC;
@@ -88,10 +124,12 @@ header{
 
 /*
 .banner-destaque img{
-	width: 650px;
+	width: 700px;
 	height: 500px;
+	
 }
 */
+
 .destaque{
 	margin-top: 10px;
 }
@@ -101,10 +139,39 @@ header{
 	padding-bottom: 10px;
 }
 
+/*Coloca um simbolo antes de cada frase das sublistas, ajusta a largura das bordas e dixa o simbolo transparante com opacity, usando pseudo-classes-elementos*/
+.painel h2:before {
+	content: '\2756';
+	padding-right: 5px;
+	opacity: 0.4;
+}
+	
 .painel{
 	margin: 10px 2px;
 	padding: 10px;
 	width: 470px;
+}
+
+/*Deixa as bordas dos paineis arredondadas*/
+.painel {
+	border-radius: 4px;
+	box-shadow: 1px 1px 4px #999;
+	/*box-shadow: inset 1px 1px 4px #999; coloca bordas internas ao elemento*/
+}
+
+/*Coloca de forma sútil um sombreamento em branco nas tags h2
+.painel h2 {
+	text-shadow: 3px 3px 2px #FFF;
+}
+*/
+.painel h2 {
+	text-shadow: 1px 1px 2px rgba(255,255,255,0.3);
+}
+
+/*Colocando gradiente no painel de novidades*/
+.novidades {
+	background-color: #f5dcdc;
+	background: linear-gradient(#f5dcdc, #bebef4);
 }
 
 .novidades{
@@ -139,11 +206,57 @@ header{
 	text-decoration: none;
 }
 
-.novidades{
-	background-color: #F5DCDC;
+/*colocando gradiente no painel mais vendidos*/
+.mais-vendidos {
+	background: #dcdcf5;
+	background: linear-gradient(#dcdcf5, #f4bebe);
+}
+	
+/*rodapé*/
+
+footer {
+	background-image: url(../img/fundo-rodape.png);
+	clear: both;
+	padding: 20px 0;
 }
 
-.mais-vendidos{
-	background-color: #DCDCF5;
+footer .container {
+	position: relative;
+}
+	
+.social {
+	position: absolute;
+	top: 12px;
+	right: 0;
 }
 
+.social li {
+	float: left;
+	margin-left: 25px;
+}
+
+.social a {
+	/* tamanho da imagem */
+	height: 32px;
+	width: 32px;
+	/* image replacement */
+	display: block;
+	text-indent: -9999px;
+}
+
+
+.social a[href*="facebook.com"] {
+	background-image: url(../img/facebook.png);
+}
+
+.social a[href*="twitter.com"] {
+	background-image: url(../img/twitter.png);
+}
+
+.social a[href*="plus.google.com"] {
+	background-image: url(../img/googleplus.png);
+}
+
+
+		
+	

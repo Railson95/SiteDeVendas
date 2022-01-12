@@ -1,0 +1,22 @@
+a{
+    color: black;
+    /*text-decoration: none;*/
+}
+
+/* seleciona o link no exato momento em que passamos o mouse por cima dele */
+a:hover{
+    background-color:purple;
+}
+/* seleciona todas as âncoras que têm o atributo "href", ou seja, links */
+a:link {
+    background-color:#FF0000;
+}
+/* seleciona todos os links cujo valor de "href" é um endereço já visitado */
+a:visited {
+    background-color:#00FF00;
+}
+/* seleciona o link no exato momento em que clicamos nele */
+a:active {
+    background-color:#0000FF;
+}
+    
